@@ -3,24 +3,23 @@ package com.javaprojectspring.javaproject.entities.pk;
 import java.io.Serializable;
 import java.util.Objects;
 
-import org.hibernate.annotations.ManyToAny;
-
 import com.javaprojectspring.javaproject.entities.Order;
 import com.javaprojectspring.javaproject.entities.Product;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Embeddable
 public class OrderItemPk implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
-	@ManyToAny
+	@ManyToOne
 	@JoinColumn(name = "order_id")
 	private Order order;
 	
-	@ManyToAny
+	@ManyToOne
 	@JoinColumn(name = "product_id")
 	private Product product;
 	
