@@ -45,7 +45,7 @@ public class UserResourceWeb {
 	
 	@DeleteMapping(value = "/{id}")
 	public ResponseEntity<Void> dleteById(@PathVariable Long id){
-		userService.deleteById(id);
+		userService.deleteUser(id);
 		return ResponseEntity.noContent().build();
 	}
 	
