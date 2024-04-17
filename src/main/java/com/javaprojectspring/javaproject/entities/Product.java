@@ -2,7 +2,6 @@ package com.javaprojectspring.javaproject.entities;
 
 import java.io.Serializable;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Objects;
 import java.util.Set;
 
